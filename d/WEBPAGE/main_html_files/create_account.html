@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-container {
+            background: rgba(105, 11, 11, 0.562);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .signup-container form {
+            position: relative;
+            z-index: 2;
+        }
+        .signup-container form label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+        .signup-container form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signup-container form a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        .signup-container form a:hover {
+            background-color: #45a049;
+        }
+        .required::after {
+            content: "*";
+            color: red;
+        }
+        footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <form>
+        <h2>Signup</h2>
+        <label for="username" class="required">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email" class="required">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone" class="required">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="dob" class="required">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="password" class="required">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <a href="/WEBPAGE/main_html_files/loginf.html">Signup</a>
+    </form>
+    <p style="margin-top: 1rem;">Have an account? <a href="/WEBPAGE/main_html_files/loginf.html" style="color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none;">Login</a></p>
+</div>
+<footer>
+    <p style="color: #f4f4f4;">&copy; 2024 Mohammad Arsh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
